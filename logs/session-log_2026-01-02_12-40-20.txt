@@ -1,0 +1,30 @@
+﻿**********************
+Début de la transcription Windows PowerShell
+Heure de début : 20260102124020
+Nom d'utilisateur : RODOLPHE_PC\biele
+Utilisateur runAs :  RODOLPHE_PC\biele
+Nom de la configuration : 
+Ordinateur : RODOLPHE_PC (Microsoft Windows NT 10.0.26200.0)
+Application hôte : C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\biele\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+ID de processus : 36968
+PSVersion: 5.1.26100.7462
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7462
+BuildVersion: 10.0.26100.7462
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcription démarrée, le fichier de sortie est .\logs\session-log_2026-01-02_12-40-20.txt
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) Stop-Transcript
+**********************
+Fin de la transcription Windows PowerShell
+Heure de fin : 20260102124107
+**********************
