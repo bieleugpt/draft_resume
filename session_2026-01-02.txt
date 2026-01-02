@@ -9472,3 +9472,67 @@ Latency: 52.91s
 
 ]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
 ]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git init
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git add .
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git commit -m "Initial commit"
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git remote add origin https://github.com/bieleugpt/draft_resume.git
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git branch -M main
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git push -u origin main
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git branch
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git branch dev 
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git branch 
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+]633;D]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B
+(.venv) git checkout dev 
+
+]633;D;0]633;A]633;P;Cwd=C:\x5cUsers\x5cbiele\x5cDesktop\x5cCours\x5cSousWindowsRodolphe\x5cLLM\x5cproject\x5cDRAFTPS C:\Users\biele\Desktop\Cours\SousWindowsRodolphe\LLM\project\DRAFT> ]633;B

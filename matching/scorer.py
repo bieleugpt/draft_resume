@@ -1,76 +1,48 @@
-'''
-
-from typing import Dict
 from matching.similarity import cosine_similarity
+import numpy as np
 
-
-DEFAULT_WEIGHTS = {
-    "skills": 0.4,
-    "experience": 0.4,
-    "education": 0.2
-}
-
-
-def compute_score(cv_embeddings, job_embeddings, weights=DEFAULT_WEIGHTS):
-    scores = {}
-    total_score = 0.0
-
-    for section, weight in weights.items():
-        sim = cosine_similarity(
-            cv_embeddings.get(section),
-            job_embeddings.get(section)
-        )
-
-        # bonus faible pour education si non nulle
-        if section == "education" and sim < 0.1:
-            sim = 0.1
-
-        scores[section] = sim
-        total_score += weight * sim
-
-    scores["total"] = total_score
-    return scores
-'''
-
-
-
-#scorer.py
-from matching.similarity import cosine_similarity
-
+MATCH_KEYS = [
+    "hard_skills",
+    "soft_skills",
+    "tools_technologies",
+    "domain_knowledge",
+    "experience",
+    "education",
+    "full_text"
+]
 
 WEIGHTS = {
-    "hard_skills": 0.4,
-    "tools_technologies": 0.2,
-    "domain_knowledge": 0.2,
-    "soft_skills": 0.2,
-    "experience": 0.3,
-    "education": 0.1,
+    "hard_skills": 0.25,
+    "soft_skills": 0.15,
+    "tools_technologies": 0.15,
+    "domain_knowledge": 0.15,
+    "experience": 0.15,
+    "education": 0.05,
+    "full_text": 0.10
 }
 
 
 def compute_score(cv_embeddings, job_embeddings):
     scores = {}
-    total = 0.0
-    weight_sum = 0.0
-    WEIGHTS = {
-    "full_text": 1.0
-    }
+    weighted_scores = []
+    weights_used = []
 
+    for key in MATCH_KEYS:
+        cv_emb = cv_embeddings.get(key)
+        job_emb = job_embeddings.get(key)
+        weight = WEIGHTS.get(key, 0)
 
-    for key, weight in WEIGHTS.items():
-        if cv_embeddings.get(key) is not None and job_embeddings.get(key) is not None:
-            sim = cosine_similarity(
-                cv_embeddings[key],
-                job_embeddings[key]
-            )
-            scores[key] = sim
-            total += weight * sim
-            weight_sum += weight
+        if cv_emb is None or job_emb is None:
+            continue
 
-    scores["total"] = total / weight_sum if weight_sum > 0 else 0.0
-    print({k: (v is not None) for k, v in cv_embeddings.items()})
-    print({k: (v is not None) for k, v in job_embeddings.items()})
+        sim = float(cosine_similarity(cv_emb, job_emb))
+        scores[key] = sim
+        weighted_scores.append(sim * weight)
+        weights_used.append(weight)
+
+    scores["total"] = (
+        sum(weighted_scores) / sum(weights_used)
+        if weights_used else 0.0
+    )
 
     return scores
-
-
