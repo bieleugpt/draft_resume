@@ -94,7 +94,7 @@ def extract_tools_technologies(text: str):
     return tools if tools else []
 
 # =====================================================
-# MAIN STRUCTURING FUNCTION (FIX FINAL)
+# MAIN STRUCTURING FUNCTION (FINAL, MIXTE ATS + LLM)
 # =====================================================
 def structure_document(text: str, doc_type: str) -> Dict:
     """
@@ -107,9 +107,11 @@ def structure_document(text: str, doc_type: str) -> Dict:
     experience_text = sections.get("experience", "").strip()
     education_text = sections.get("education", "").strip()
 
-    # 🔴 SOURCE D’EXTRACTION GARANTIE
+    # 🔥 LOGIQUE MIXTE
+    # CV : LLM-FIRST (ATS fallback)
+    # JOB : sections + LLM
     if doc_type == "cv":
-        extraction_source = skills_text or experience_text or text
+        extraction_source = skills_text if len(skills_text) > 50 else text
     else:
         extraction_source = skills_text or experience_text or text
 
@@ -120,12 +122,10 @@ def structure_document(text: str, doc_type: str) -> Dict:
 
     print("[DEBUG] skills extracted:", skills)
 
-    # 🔥 ON FORCE LE PASSAGE DES SKILLS
     hard_skills = " ".join(skills.get("hard_skills", []))
     soft_skills = " ".join(skills.get("soft_skills", []))
     domain_knowledge = " ".join(skills.get("domain_knowledge", []))
 
-    # Tools
     tools_technologies = " ".join(extract_tools_technologies(text))
 
     if doc_type == "job":

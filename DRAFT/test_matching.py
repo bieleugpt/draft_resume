@@ -41,6 +41,12 @@ if __name__ == "__main__":
     print_structured("STRUCTURED CV", cv_structured)
     print_structured("STRUCTURED JOB", job_structured)
 
+    print("- hard_skills:", cv_structured.get("hard_skills", "[MISSING]"))
+    print("- soft_skills:", cv_structured.get("soft_skills", "[MISSING]"))
+    print("- domain_knowledge:", cv_structured.get("domain_knowledge", "[MISSING]"))
+    print("- tools_technologies:", cv_structured.get("tools_technologies", "[MISSING]"))
+
+
     # 3️⃣ Embeddings
     cv_embeddings = embed_structured_document(cv_structured)
     job_embeddings = embed_structured_document(job_structured)

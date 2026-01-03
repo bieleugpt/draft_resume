@@ -1,5 +1,4 @@
 # embedding_pipeline.py
-
 from typing import Dict
 from sentence_transformers import SentenceTransformer
 

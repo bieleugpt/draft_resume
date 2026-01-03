@@ -1,10 +1,9 @@
-
-
 import streamlit as st
 from pathlib import Path
 import tempfile
+import matplotlib.pyplot as plt
 
-from main import run_matching
+from main import run_matching, plot_strengths
 
 # -------------------------
 # Config page
@@ -16,7 +15,10 @@ st.set_page_config(
 )
 
 st.title("📄 Smart Resume & Job Matcher")
-st.write("Matching intelligent entre un CV et une offre d’emploi")
+st.write(
+    "Matching intelligent entre un CV et une offre d’emploi "
+    "basé sur une compréhension sémantique multi-exécutions."
+)
 
 st.divider()
 
@@ -25,20 +27,13 @@ st.divider()
 # -------------------------
 st.subheader("1️⃣ Charger les fichiers")
 
-cv_file = st.file_uploader(
-    "Uploader le CV (PDF)",
-    type=["pdf"]
-)
-
-job_file = st.file_uploader(
-    "Uploader l'offre d'emploi (TXT ou PDF)",
-    type=["txt", "pdf"]
-)
+cv_file = st.file_uploader("Uploader le CV (PDF)", type=["pdf"])
+job_file = st.file_uploader("Uploader l'offre d'emploi (TXT ou PDF)", type=["txt", "pdf"])
 
 st.divider()
 
 # -------------------------
-# Bouton lancement
+# Lancer analyse
 # -------------------------
 st.subheader("2️⃣ Lancer le matching")
 
@@ -51,8 +46,7 @@ if run_button:
     if cv_file is None or job_file is None:
         st.error("⚠️ Veuillez uploader le CV et l'offre d'emploi.")
     else:
-        with st.spinner("Analyse en cours..."):
-            # Sauvegarde temporaire des fichiers
+        with st.spinner("Analyse sémantique en cours (LLM + multi-runs)..."):
             with tempfile.TemporaryDirectory() as tmp_dir:
                 tmp_dir = Path(tmp_dir)
 
@@ -62,62 +56,61 @@ if run_button:
                 cv_path.write_bytes(cv_file.getbuffer())
                 job_path.write_bytes(job_file.getbuffer())
 
-                # Appel du pipeline IA
-                result = run_matching(
-                    cv_path=str(cv_path),
-                    job_path=str(job_path)
+                scores_mean, scores_std, explanation = run_matching(
+                    cv_path=cv_path,
+                    job_path=job_path,
+                    n_runs=5
                 )
 
         st.success("✅ Analyse terminée")
 
         # -------------------------
-        # Résultats
+        # Résultats globaux
         # -------------------------
         st.divider()
         st.subheader("📊 Résultats du matching")
 
-        scores_mean = result["scores_mean"]
-        scores_std = result["scores_std"]
-        n_runs = result["n_runs"]
+        total_mean = scores_mean.get("total", 0)
+        total_std = scores_std.get("total", 0)
 
         col1, col2, col3 = st.columns(3)
 
-        total_mean = float(scores_mean.get("total", 0))
-        total_std = float(scores_std.get("total", 0))
-
-        percentage = round(total_mean * 100, 1)
-        percentage_std = round(total_std * 100, 1)
-
-
         col1.metric(
             "Matching global",
-            f"{percentage} %",
-            f"± {percentage_std} %"
+            f"{total_mean * 100:.1f} %",
+            f"± {total_std * 100:.1f} %"
         )
 
         col2.metric(
             "Hard skills",
-            round(scores_mean.get("hard_skills", 0), 3)
+            f"{scores_mean.get('hard_skills', 0):.3f}"
         )
 
         col3.metric(
             "Soft skills",
-            round(scores_mean.get("soft_skills", 0), 3)
+            f"{scores_mean.get('soft_skills', 0):.3f}"
         )
 
+        st.progress(min(max(total_mean, 0.0), 1.0))
 
-        st.progress(total_mean)
+        st.caption(
+            "Score estimé à partir de plusieurs exécutions indépendantes. "
+            "La variabilité reflète l’incertitude sémantique du modèle."
+        )
+
+        # -------------------------
+        # Diagramme Forces / Faiblesses
+        # -------------------------
+        st.divider()
+        st.subheader("📈 Analyse Forces / Faiblesses")
+
+        fig = plot_strengths(scores_mean)
+        st.pyplot(fig)
 
         # -------------------------
         # Explication IA
         # -------------------------
-        st.info(
-            f"Score estimé à partir de {n_runs} exécutions indépendantes. "
-            "De légères variations sont normales."
-        )
-
         st.divider()
         st.subheader("🧠 Explication IA")
 
-        st.write(result["explanation"])
-
+        st.write(explanation)
